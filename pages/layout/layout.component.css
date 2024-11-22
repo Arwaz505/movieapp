@@ -1,0 +1,45 @@
+/* Ensure the navbar is responsive on all screen sizes */
+.navbar {
+    padding: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-left: 20px;
+    }
+  }
+
+
+  .container {
+    background-color: #333;  /* Dark background for the container */
+    padding: 20px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: black;  /* Default color */
+  }
+  
+  .card a:hover {
+    color: red;  /* Color when hovered */
+  }
+  
+
+ 
+  
+  

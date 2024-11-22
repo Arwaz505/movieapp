@@ -1,0 +1,181 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">MoviesHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/bollywood">Bollywood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/hollywood">Hollywood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/webseries">Webseries</a>
+          </li>
+          <!-- Quality Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="qualityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Quality
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="qualityDropdown">
+              <li><a class="dropdown-item" routerLink="/quality/480p">480p</a></li>
+              <li><a class="dropdown-item" routerLink="/quality/720p">720p</a></li>
+              <li><a class="dropdown-item" routerLink="/quality/1080p">1080p</a></li>
+              <li><a class="dropdown-item" routerLink="/quality/2160p">2160p/4K</a></li>
+            </ul>
+          </li>
+          <!-- Year Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="yearDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Year
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="yearDropdown">
+              <li><a class="dropdown-item" routerLink="/year/2021">2021</a></li>
+              <li><a class="dropdown-item" routerLink="/year/2022">2022</a></li>
+              <li><a class="dropdown-item" routerLink="/year/2023">2023</a></li>
+              <li><a class="dropdown-item" routerLink="/year/2024">2024</a></li>
+            </ul>
+          </li>
+          <!-- Search Box -->
+          <li class="nav-item">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-danger ms-2" type="button" (click)="onLogout()">Logout</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="card-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; background-color: #333; padding: 10px; margin: 5px 15px;">
+
+    <!-- Card 1 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://rogmovies.fun/wp-content/uploads/2024/08/Kalki-Poster-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+                Download Kalki 2898 AD (2024) Hindi ORG DD5.1 NF WEB-DL 480p [500MB] 720p [1.6GB] 1080p [3.1GB] | 2160p 4K
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://rogmovies.fun/wp-content/uploads/2024/11/Citadel-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Citadel: Honey Bunny (Season 1) AMZN WEB-DL Hindi ORG. DD5.1 Complete Web Series 480p | 720p | 1080p
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://vegamovies.si/wp-content/uploads/2024/10/The-Wild-Robot-1-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download The Wild Robot (2024) Dual Audio Hindi-English BluRay 480p [530MB] | 720p [1.1GB] | 1080p [2.4GB]
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://vegamovies.si/wp-content/uploads/2024/11/Transformers-One-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Transformers One (2024) Dual Audio Hindi ORG. DD5.1-English WEB-DL 480p [530MB] | 720p [1.1GB] | 1080p [2.6GB] | 2160p 4K
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://vegamovies.si/wp-content/uploads/2024/09/Inside-Out-2-Hindi-2024-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Inside Out 2 (2024) BluRay Dual Audio Hindi-English 480p [370MB] | 720p [780MB] | 1080p [2.3GB]
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://rogmovies.fun/wp-content/uploads/2024/11/Vijay-69-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Vijay 69 (2024) Netflix WEB-DL Hindi DD5.1 Full Movie 480p 720p & 1080p
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://rogmovies.fun/wp-content/uploads/2024/11/vettaiyan-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Vettaiyan (2024) Dual Audio [Hindi (ORG 5.1) & Tamil] AMZN WEB-DL 480p [600MB] | 720p [1.5GB] | 1080p [3.3GB]
+            </a>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card" style="width: 20%; margin: 10px; padding: 15px; background-color: #333; border: none;">
+        <img class="card-img-top" src="https://rogmovies.fun/wp-content/uploads/2024/09/Devara-Part-1-Hidni-2024-200x300.jpg" alt="image" style="width:100%; border: 3px solid white;">
+        <div class="card-body">
+            <a href="" class="card-title" style="text-decoration: none; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">
+              Download Devara – Part 1 (2024) WEB-DL Dual Audio [Hindi (LiNE) – Telugu] Full Movie 480p [580MB] | 720p [1.5GB] | 1080p [3.4GB]
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Responsive Design -->
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 20%;
+    margin: 5px; /* Decreased margin */
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .card {
+      width: 45%;  /* 2 cards per row */
+      margin: 5px; /* Decreased margin */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 98%;  /* 1 card per row */
+      margin: 5px; /* Decreased margin */
+    }
+  }
+</style>
+
+
+  
+  
+  
+  
+  
+  
+  
+  

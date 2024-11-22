@@ -1,0 +1,44 @@
+<div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" formControlName="name" type="text" />
+            <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                Name is required.
+            </div>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" formControlName="email" type="email" />
+            <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                Please enter a valid email.
+            </div>
+        </div>
+
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" formControlName="message"></textarea>
+            <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                Message must be at least 10 characters long.
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+</div>
+
+<!-- Notice Section -->
+<div class="contact-notice">
+    <p><strong>Contact Us - Movie Website</strong></p>
+    <p>We would love to hear from you! Whether you have a question, feedback, or need assistance, our team is here to help.</p>
+    <p><strong>Please note:</strong></p>
+    <ul>
+        <li>We do our best to respond to all inquiries within 48 hours.</li>
+        <li>For urgent matters, please specify "Urgent" in the subject line.</li>
+        <li>All information provided will be kept confidential and only used for responding to your inquiry.</li>
+        <li>For movie-related inquiries or issues with your account, please include relevant details (e.g., movie title, account name, issue description) to assist us in providing a quicker response.</li>
+    </ul>
+    <p>Thank you for visiting our website!</p>
+</div>

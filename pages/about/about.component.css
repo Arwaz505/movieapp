@@ -1,0 +1,80 @@
+/* General container styling */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  h1 {
+    font-size: 36px;
+    color: #2a2a2a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 40px;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 10px;
+  }
+  
+  .features-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feature-item {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: 4px solid #d9534f;
+    background-color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateX(10px);
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .feature-item {
+      font-size: 16px;
+    }
+  }
+  
